@@ -4,7 +4,7 @@
 Фотокарточка
 ----
 
-![Screenshot](https://i.imgur.com/Bx7OqRu.png)
+![Screenshot](https://i.imgur.com/Wi3nKSV.png)
 
 
 Установка и запуск
