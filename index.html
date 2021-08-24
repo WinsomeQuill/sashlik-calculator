@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Шашлык калькулятор</title>
+  <meta property="og:type" content="">
+  <style>
+    @import url('./node_modules/bootstrap/dist/css/bootstrap.min.css');
+    @import url('./node_modules/@fortawesome/fontawesome-free/css/all.min.css');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/png type">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-104495618-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-104495618-6');
+  </script>
+</head>
+
+
+<body>
+  <div class="container-fluid yellow-bacgkround">
+    <div class="row">
+      <div class="col-12 text-center gold-text">
+        <h3>Золотая формула шашлыка!</h3>
+      </div>
+      <div class="col-12 text-center">
+        <img style="margin-top: 20px; margin-bottom: 20px;" src="assets/img/favicon.png" alt="" height="150px" width="150px">
+      </div>
+      <div class="col-12 text-center" style="padding-top: 50px;">
+        <p>Сколько будет народу?</p>
+        <input type="range" class="form-range" min="1" max="30" id="range-count-peoples" value="7">
+        <div class="row">
+          <div class="col-4 text-center">
+            <p>Парочка человек</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>Не большая компания</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>Весь коллектив!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center" style="padding-top: 50px;">
+        <p>Как долго будем сидеть?</p>
+        <input type="range" class="form-range" min="1" max="3" id="range-time-duration" value="2">
+        <div class="row">
+          <div class="col-4 text-center">
+            <p>Недолго (1-3 часа)</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>Прилично (4-8 часа)</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>С утра до ночи!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center" style="padding-top: 50px;">
+        <p>Примерный расчет:</p>
+        <p id="total-info">На <span id="total-info-people">7</span> человек нужно  <span id="total-info-eat">1.1</span> килограмм шашлыка!</p>
+      </div>
+      <div class="col-6 text-center col-author">
+        <a href="https://vk.com/winsomequill/">
+          <button class="btn btn-secondary"><p>Автор</p></button>
+        </a>
+      </div>
+      <div class="col-6 text-center col-author">
+        <a href="https://quartzland.ru/">
+          <button class="btn btn-info"><p>Спонсор</p></button>
+        </a>
+      </div>
+      <div class="col-12 text-center">
+        <p>Powered by ElectronJS @ 2021</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <script>
+    require('bootstrap');
+    require('./dist/renderer.js');
+  </script>
+</footer>
+</html>
